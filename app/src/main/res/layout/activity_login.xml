@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/light_blue">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgLoginLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/ic_setting_logo_red"
+                android:tint="@color/background" />
+
+            <EditText
+                android:id="@+id/edtLoginUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="@string/username"
+                android:paddingBottom="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/background"
+                android:textColorHint="@color/background"
+                android:backgroundTint="@color/background"
+                android:layout_below="@+id/imgLoginLogo"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"/>
+
+            <EditText
+                android:id="@+id/edtLoginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                android:paddingBottom="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/background"
+                android:textColorHint="@color/background"
+                android:backgroundTint="@color/background"
+                android:layout_below="@+id/edtLoginUsername"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"/>
+
+            <Button
+                android:id="@+id/btnLoginLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:background="@drawable/btn_styleblue"
+                android:textColor="@color/background"
+                android:textSize="17sp"
+                android:layout_below="@+id/edtLoginPassword"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp" />
+
+            <TextView
+                android:id="@+id/textLoginOR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textColor="@color/background"
+                android:textSize="17sp"
+                android:layout_below="@+id/btnLoginLogin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"/>
+
+            <Button
+                android:id="@+id/btnLoginConnectfb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/connect_with_facebook"
+                android:drawableStart="@drawable/ic_welcome_fb_login"
+                android:paddingLeft="45dp"
+                android:gravity="center"
+                android:paddingRight="45dp"
+                android:background="@drawable/btn_styleblue"
+                android:textColor="@color/background"
+                android:textSize="17sp"
+                android:layout_below="@+id/textLoginOR"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp" />
+
+            <TextView
+                android:id="@+id/textLoginRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/doesn_t_have_account_register"
+                android:textColor="@color/background"
+                android:textSize="15sp"
+                android:layout_below="@+id/btnLoginConnectfb"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

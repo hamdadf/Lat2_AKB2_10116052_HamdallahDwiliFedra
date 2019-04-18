@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyActivity"
+    android:background="@color/light_blue">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtVerifyVerify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="160dp"
+            android:text="@string/verify_your_account"
+            android:textColor="@color/background"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txtVerifyDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtVerifyVerify"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/desc_verify"
+            android:textColor="@color/background" />
+
+        <EditText
+            android:id="@+id/edtVerifyEntercode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtVerifyDesc"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@color/background"
+            android:gravity="center"
+            android:hint="@string/enter_verification_code_here"
+            android:paddingBottom="20dp"
+            android:textColor="@color/background"
+            android:textColorHint="@color/background"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnVerifySend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtVerifyEntercode"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_styleblue"
+            android:text="@string/send"
+            android:textColor="@color/background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnVerifySend"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/doesn_t_get_the_code_resend"
+            android:textColor="@color/background"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

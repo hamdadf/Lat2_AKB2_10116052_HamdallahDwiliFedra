@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/relRegisterheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_header"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backarrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="24dp"
+                android:contentDescription="@string/arrowback"
+                android:src="@drawable/ic_header_back" />
+
+            <TextView
+                android:id="@+id/textRegisterRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/register"
+                android:textColor="@color/background"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relRegisterheader">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/edtRegisterUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/font_desc"
+                    android:hint="@string/username"
+                    android:inputType="text"
+                    android:paddingBottom="20dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/font_desc"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edtRegisterEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtRegisterUsername"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/font_desc"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:paddingBottom="20dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/font_desc"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edtRegisterPhonnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtRegisterEmail"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/font_desc"
+                    android:hint="@string/phonenumber"
+                    android:inputType="phone"
+                    android:paddingBottom="20dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/font_desc"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rdbRegisterMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtRegisterPhonnumber"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="@color/light_blue"
+                    android:checked="true"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="40dp"
+                    android:text="@string/male"
+                    android:textColor="@color/font_desc" />
+
+                <RadioButton
+                    android:id="@+id/rdbRegisterFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtRegisterPhonnumber"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="50dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="40dp"
+                    android:text="@string/female"
+                    android:textColor="@color/font_desc" />
+
+                <EditText
+                    android:id="@+id/drbRegisterBlood"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rdbRegisterMale"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableEnd="@drawable/ic_arrow_dropdown"
+                    android:hint="@string/bloodtype"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/drbRegistereshus"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rdbRegisterMale"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:drawableEnd="@drawable/ic_arrow_dropdown"
+                    android:text="@string/reshus"
+                    android:textColor="@color/font_desc"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edtRegisterPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/drbRegisterBlood"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/font_desc"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingBottom="20dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/font_desc"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edtRegisterRepassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtRegisterPassword"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/font_desc"
+                    android:hint="@string/retypepassword"
+                    android:inputType="textPassword"
+                    android:paddingBottom="20dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/font_desc"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/rdbReisterPersonal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtRegisterRepassword"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="@color/light_blue"
+                    android:checked="true"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="30dp"
+                    android:text="@string/personal"
+                    android:textColor="@color/font_desc" />
+
+                <RadioButton
+                    android:id="@+id/rdbRegisterOrganization"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtRegisterRepassword"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="50dp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="12dp"
+                    android:text="@string/organization"
+                    android:textColor="@color/font_desc" />
+
+                <EditText
+                    android:id="@+id/drbRegisterJob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rdbRegisterOrganization"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:drawableEnd="@drawable/ic_arrow_dropdown"
+                    android:backgroundTint="@color/font_desc"
+                    android:hint="@string/job"
+                    android:inputType="text"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edtRegisterHomeaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/drbRegisterJob"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="@string/homeaddress"
+                    android:backgroundTint="@color/font_desc"
+                    android:inputType="text"
+                    android:paddingBottom="20dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edtRegisterLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtRegisterHomeaddress"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/font_desc"
+                    android:drawableEnd="@drawable/ic_blood_needed_location"
+                    android:hint="@string/defaultlocation"
+                    android:inputType="text"
+                    android:textColor="@color/font_desc"
+                    android:textColorHint="@color/font_desc"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/chkRegisterAgree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtRegisterLocation"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:drawableStart="@drawable/ic_register_terms_on"
+                    android:gravity="center"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="70dp"
+                    android:text="@string/agree_with_terms_and_conditions"
+                    android:textColor="@color/font_desc" />
+
+                <Button
+                    android:id="@+id/btnRegisterRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/chkRegisterAgree"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/btn_stylewhite"
+                    android:text="@string/register"
+                    android:textColor="@color/light_blue" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
